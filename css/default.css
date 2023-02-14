@@ -5,6 +5,54 @@ body {
     font-size: 12px;
     overflow: auto
 }
+body {
+    background: url('heart-bg.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+  #code {
+    color: #ff8888;
+  }
+  
+  #messages,
+  #loveu {
+    color: #ff8888;
+  }
+  #garden {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: heartbeat 2s infinite;
+  }
+  
+  @keyframes heartbeat {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+    
+#content {
+    background: #fff;
+    border: 10px solid #ffafaf;
+    box-shadow: 0px 0px 20px #ffafaf;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    border-radius: 20px;
+  }
+  
 
 #mainDiv {
     width: 100%;
